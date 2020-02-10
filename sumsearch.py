@@ -1,6 +1,4 @@
 from array import *
-
-
 def search():
     sum = int(input("Enter the value of sum "))
     n = int(input("Enter the length of array"))
