@@ -11,7 +11,7 @@ def sum():
         for i in range(n):
             for j in range(i+1,n):
                 if (arr[i]+arr[j]==sum):
-                    print(i,j)
+                    print(arr[i],arr[j])
                     c=c+1
         if c==0:
             print("there is no match with the sum")
