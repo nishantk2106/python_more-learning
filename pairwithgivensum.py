@@ -1,19 +1,14 @@
 # Find pair with given sum in the array
 from array import *
-def sum():
-        c=0
-        sum=int(input("Enter the value of sum "))
-        n=int(input("Enter the length of array"))
-        arr=array('i',[])
-        for i in range(n):
-            p=int(input("Enter the value in array :"))
-            arr.append(p)
-        for i in range(n):
-            for j in range(i+1,n):
-                if (arr[i]+arr[j]==sum):
-                    print(arr[i],arr[j])
-                    c=c+1
-        if c==0:
+def sum(ar,arr_size,s):
+    for i in range(arr_size):
+        for j in range(i+1,arr_size):
+            if (ar[i]+ar[j]==s):
+                print(ar[i],ar[j])
+    else:
             print("there is no match with the sum")
-
-sum()
+#
+ar=[1,2,2,3,4,4,5,6,7,7]
+s=10
+arr_size=len(ar)
+sum(ar,arr_size,s)
