@@ -6,6 +6,6 @@ def repeatingnumber(arr,size):
             print(abs(arr[i]),end=" ")
 
 # driver code
-ar=[1,2,2,3,4,4,5,6,7,7]
+ar=[10,2,2,3,4,4,5,6,7,7,10]
 arr_size=len(ar)
 repeatingnumber(ar,arr_size)
